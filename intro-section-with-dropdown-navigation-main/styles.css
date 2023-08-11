@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 10%;
+  margin-top: 1rem;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: hsl(0, 0, 20%);
+}
+
+.dropdown{
+  color: hsl(0, 0%, 40%);
+}
+
+.dropdown:active{
+  color: #000000;
+}
+
+.link:hover{
+  color: #000000;
+}
+
+.dropdown-menu{
+  display: none;
+  padding: 12px 16px;
+  box-shadow: 1px 1px 5px 0px hsl(0, 0%, 50%);
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 10px;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition:all 200ms ease-out;
+}
+
+.dropdown-menu.active{
+  opacity: 100%;
+  transform: translateY(0);
+}
+
+.active{
+  display: block;
+}
+
+.dropdown-menu ul{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-menu ul li{
+  display: flex;
+  gap: 10px;
+  align-items: center; 
+}
+
+.arrowUp{
+  display: none;
+}
+
+.logo{
+  margin-right: 1rem;
+}
+
+.login{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: hsl(0, 0, 40%);
+  font-weight: 600;
+}
+
+.register{
+  margin-left: 1.5rem;
+  border: 1.5px solid hsl(0, 0, 0%);
+  color: hsl(0, 0%, 0%);
+  border-radius: 10px;
+  padding: 8px 15px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 200ms ease-out;
+}
+
+.register:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-inline: 10%;
+  gap: 7rem;
+  margin-top: 3rem;
+}
+
+.text h1{
+  font-size: 3.5rem;
+  margin-top: 7rem;
+}
+
+.text p{
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.learn-more{
+  margin-top: 2rem;
+  border: none;
+  background-color: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: all 200ms ease-out;
+}
+
+.learn-more:hover{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.image img{
+  height: 28rem;
+}
+
+.logos{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6rem;
+}
